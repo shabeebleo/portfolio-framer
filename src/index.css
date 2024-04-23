@@ -7,14 +7,17 @@ html{
   scroll-behavior: smooth;
 }
 *{
+  overflow-x:hidden;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "DM Sans",sans-serif;
 }
 body{
+ 
    background-color:#0c0c1d;
    color: lightgray;
+
 }
 section{
   height: 100vh;
@@ -28,3 +31,49 @@ img{
 a{
   font-size: 25px;
 }
+.custom-gradient {
+  height: calc(100vh - 100px);
+  background-image: linear-gradient(to bottom, #0c0c1d, #222244);
+}
+.button-color{
+  background-color: #0c0c1d;
+}
+.button-border-color{
+  border-color:  #0c0c1d;
+}
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.jersey-25-regular {
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.slinding-text {
+  font-size: 40vh; 
+
+}
+.nova-slim-regular {
+  font-family: "Nova Slim", system-ui;
+  font-weight: 350;
+  font-style: normal;
+}
+
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(-10%); /* Start position (off the left side) */
+  }
+  100% {
+    transform: translateX(100%); /* End position (off the right side) */
+  }
+}
+
+.animate-slide {
+  animation: slide 10s linear infinite; /* Adjust duration and timing function as needed */
+}
+

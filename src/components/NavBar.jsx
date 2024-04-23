@@ -5,7 +5,7 @@ import SideBar from "./SideBar";
 function NavBar() {
  
   return (
-    <div className="navbar h-100px flex">
+    <div className="navbar h-[100px] flex">
       <SideBar/>
       
       <div className="wrapper items-center h-14 flex  justify-around w-full">

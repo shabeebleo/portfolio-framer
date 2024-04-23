@@ -28,7 +28,7 @@ function SideBar() {
       <ToggleButtonSideBar setOpen={setOpen} />
       <motion.div
         animate={open ? "open" : "closed"}
-        className="bg  h-screen fixed flex items-center justify-center  rounded-r-2xl  top-0 left-0 w-[310px] bg-white"
+        className="bg  overflow-hidden  h-screen fixed flex items-center justify-center  rounded-r-2xl  top-0 left-0 w-[310px] bg-white"
         variants={variants}
       >
         <LinkSideBar />

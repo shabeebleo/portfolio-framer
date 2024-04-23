@@ -22,15 +22,12 @@ function LinkSideBar() {
     closed: {
       y: 60,
       opacity: 0,
-      // transition:{
-      //   duration:.2
-      // }
+   
     },
   };
   let items = ["HomePage", "Services", "Porfolio", "Contact", "About"];
   return (
     <motion.div
-    // exit={{ transition: { duration: 0.2 ,opacity:0} }}
       variants={variants}
       className="links w-[100%] h-[100%] flex flex-col mt-1 items-center justify-center gap-[20px] "
     >
